@@ -11,8 +11,8 @@ pool:
 
 steps:
 - script: |
-    python -m pip install --upgrade pip
-    pip install pytest
+    py -m pip install --upgrade pip
+    py -m pip install pytest
   displayName: 'Install dependencies'
 
 - script: |
