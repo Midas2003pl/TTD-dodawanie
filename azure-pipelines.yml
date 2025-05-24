@@ -4,6 +4,7 @@ trigger:
   paths:
     include:
       - src/**
+      - tests/**
 
 pool:
   name: PPPool
@@ -19,7 +20,7 @@ steps:
   displayName: 'Run pytest'
 
 - script: |
-    mkdir backup
+    if not exist backup mkdir backup
     copy src\metody.py backup\
   displayName: 'Backup metody.py (Windows CMD)'
 
