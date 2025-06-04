@@ -16,7 +16,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    py -m pytest main
+    py -m pytest main.py
   displayName: 'Run pytest'
 
 - script: |
